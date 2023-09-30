@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "Aquatico";
+    src: url("../fonts/AQUATICO-REGULAR.OTF") format("opentype"),
+}
+@font-face {
+    font-family: "Aquire";
+    src: url("fonts\AQUIRE-BW0OX.OTF") format("opentype"),
+}
+@font-face {
+    font-family: "Nordic";
+    src: url(../fonts/Nordic.ttf);
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    // .Index{
+        
+    // }
+}
+@media only screen and (min-width: 1000px) {
+    body{
+        margin: 0;
+    }
+    .navbar {
+        padding: 20px;
+        ul {
+            overflow: hidden;
+            text-align: center;
+        
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                padding: 0 20px;
+                text-align: center;
+                margin: 0 auto;
+                a{
+                    font-family: 'Source Serif Pro', serif;
+                    text-decoration: none;
+                    color: #9600fa;
+                    font-size: 20px;
+                    font-weight: bold;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            
+              }
+          }
+
+      }
+
+    .Index{
+        background: #001220;
+        background-image: url(../images/index-background.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        
+
+          //make list items inline
+
+        .content {
+            top: 30%;
+            position: relative ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            max-width: 100vw;
+            h1 {
+                font-family: 'Aquire';
+                color: #FFFFFF;
+                margin: 0;
+                font-size: 2.4em;
+                span {
+                  display: block;
+                }  
+              }    
+        
+        
+            .portfolio-text {
+                color: #ffffff;
+                margin: 0;
+                font-size: 2.4em;
+                height: 10vh;
+                width: 13ch;
+                animation: typing 2.3s steps(13), blink .5s step-end infinite alternate;
+                white-space: nowrap;
+                overflow: hidden;
+                border-right: 3px solid;
+                font-family: monospace;
+                font-size: 6em;
+                @keyframes typing {
+                    
+                    from {
+                        width: 0
+                    }
+                }
+        
+                @keyframes blink {
+                    50% {
+                    border-color: transparent
+                    }
+                }
+            }  
+        }
+    }    
+    .Timeline{
+
+    }
+}
