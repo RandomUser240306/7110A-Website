@@ -28,11 +28,11 @@ export const Krish3 = require("./Images/Krish3.png");
 
 export const Spandan1 = require("./Images/Spandan1.jpg");
 export const Spandan2 = require("./Images/Spandan2.jpg");
-// export const Spandan3 = require("./Images/Spandan3.png");
+export const Spandan3 = require("./Images/Spandan3.jpg");
 
-// export const Josh1 = require("./Images/Josh1.png");
-// export const Josh2 = require("./Images/Josh2.png");
-// export const Josh3 = require("./Images/Josh3.png");
+export const Josh1 = require("./Images/Josh1.jpg");
+export const Josh2 = require("./Images/Josh2.jpg");
+export const Josh3 = require("./Images/Josh3.jpg");
 
 export const Saarim1 = require("./Images/Saarim1.jpg");
 export const Saarim2 = require("./Images/Saarim2.jpg");

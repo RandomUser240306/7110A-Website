@@ -17,10 +17,10 @@ import {
     Krish3,
     Spandan1,
     Spandan2,
-    // Spandan3,
-    // Josh1,
-    // Josh2,
-    // Josh3,
+    Spandan3,
+    Josh1,
+    Josh2,
+    Josh3,
     Saarim1,
     Saarim2,
     Saarim3
@@ -29,8 +29,29 @@ const Members = () => {
   const members = [
     {
       name: "Ryan Brown",
-      description: "designer, builder, sort of notebook",
-      gif: "https://tenor.com/view/rat-spinning-horizontally-gif-25424411",
+      description: (
+        <>
+        Team Role: Designer and Builder
+        <br />
+        <br />
+        Accomplishments / Experience:
+        <br />
+        AP Computer Science Principles
+        <br />
+        AP Computer Science A
+        <br />
+        comp sci UIL
+        <br />
+        Introduction to Engineering 
+        <br />
+        Principles of Engineering
+        <br />
+        Robotics 1
+        <br />
+        Rockets 1
+        </>
+        ),
+        gif: "https://tenor.com/view/rat-spinning-horizontally-gif-25424411",
       photos: [
         Ryan1, 
         Ryan2, 
@@ -73,22 +94,47 @@ const Members = () => {
       photos: [
         Spandan1,
         Spandan2,
-        "https://example.com/jane3.jpg",
+        Spandan3,
       ],
     },
     {
       name: "Joshua Landgraff",
-      description: "Notebooker.",
-      gif: "https://tenor.com/view/rat-spinning-horizontally-gif-25424411",
+      description: (
+      <>
+      Team Role: Notebooker
+      <br />
+      <br />
+      Accomplishments / Experience:
+      <br />
+      Introduction to Engineering and Principles of Engineering
+      <br />
+      AP Computer Science Principles
+      <br />
+      AP Computer Science A
+      <br />
+      13th Wall Studios Video Game Development
+      <br />
+      UI Design for Companies
+      <br />
+      National Merit for Hispanics
+      </>
+      ),
+      gif: "https://media.discordapp.net/attachments/1143327129241669683/1164998581778923630/IMG_4040.gif",
       photos: [
-        "https://example.com/jane1.jpg",
-        "https://example.com/jane2.jpg",
-        "https://example.com/jane3.jpg",
+        Josh1,
+        Josh2,
+        Josh3,
       ],
     },
     {
       name: "Saarim Sayed",
       description: "Documenter.",
+      known: (
+        <>
+
+        </>
+      ),
+
       gif: "https://media.tenor.com/RfJzepsDdmYAAAAC/rat-spinning.gif",
       photos: [
         Saarim1,
@@ -103,10 +149,9 @@ const Members = () => {
       {members.map((member) => (
         <div className="member" key={member.name}>
           <h2>{member.name}</h2>
-          <p className="Description">{member.description}</p>
-          
           <div className="photos">
             {member.gif && <img className="gif" src={member.gif} alt={`${member.name}'s gif`} />}
+            <p className="Description">{member.description}</p>
             {member.photos.map((photo, index) => (
               <img src={photo} alt={member.name} key={index} />
             ))}
@@ -114,8 +159,8 @@ const Members = () => {
           <p className="Favorite">My favorite image^</p>
         </div>
       ))}
-    </div >
+    </div>
   );
-};
+  };
 
 export default Members;

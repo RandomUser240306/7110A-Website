@@ -15,17 +15,23 @@
     border-radius: 10px;
     background-color: #001220;
     height: 300px;
+    align-items: center;
 }
-.members .member .Description{
-    font-size: 25px;
+.members .member .photos .Description{
+  flex: 1; /* Take up remaining space */
+  text-align: center;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add this if you want to show ellipsis for long text */
 }
-
 .members .member .photos {
-    transform: translateY(-45%);
-    display: flex;
-    flex-direction: row;
-    padding-right: 20px;
-    border-radius: 10px;
+  margin: 0 auto;
+  transform: translateY(-20%);
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+  border-radius: 10px;
   }
   
   .members .member .photos img {
@@ -33,29 +39,30 @@
     height: 250px;
     width: auto;
     order: 1;
-  }
+    }
   
-  .members .member .photos .gif {
-    margin-left: 0px;
-    margin-top: auto;
-    height: 120px;
-    width: auto;
-    order: -1;
-  }
-  .members .member .Favorite {
-    transform: translateY(-450%);
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-  }
-
-  
-  .members .member .photos img:last-child,
-  .members .member .photos .gif:last-child {
-    margin-right: 0;
-  }
-  
-  .members .member .photos::before,
-  .members .member .photos::after {
-    content: ''; 
-    flex: 1;
-  }  
+    .members .member .photos .gif {
+      margin-left: 0px;
+      margin-top: auto;
+      height: 120px;
+      width: auto;
+      order: -1;
+      transform: translateY(0%);
+    }
+    
+    .members .member .Favorite {
+      transform: translateY(-230%);
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+    }
+    
+    .members .member .photos img:last-child,
+    .members .member .photos .gif:last-child {
+      margin-right: 0;
+    }
+    
+    .members .member .photos::before,
+    .members .member .photos::after {
+      content: '';
+      flex: 1;
+    }
