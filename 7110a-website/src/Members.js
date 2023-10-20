@@ -51,7 +51,7 @@ const Members = () => {
         Rockets 1
         </>
         ),
-        gif: "https://tenor.com/view/rat-spinning-horizontally-gif-25424411",
+        gif: "https://media.tenor.com/maiXwoUJ3_wAAAAC/thank-you.gif",
       photos: [
         Ryan1, 
         Ryan2, 
@@ -70,7 +70,7 @@ const Members = () => {
     {
       name: "Bailey Koh",
       description: "Builder",
-      gif: "https://tenor.com/view/rat-spinning-horizontally-gif-25424411",
+      gif: "https://media.tenor.com/PsHa5wuZ3wcAAAAC/bad-kitty-bad-kitten.gif",
       photos: [
         Bailey1,
         Bailey2,
@@ -90,7 +90,7 @@ const Members = () => {
     {
       name: "Spandan Patel",
       description: "Coder, off-builder.",
-      gif: "https://tenor.com/view/rat-spinning-horizontally-gif-25424411",
+      gif: "https://media.tenor.com/sIGHWV8TeSEAAAAd/i-have-no-enemies.gif",
       photos: [
         Spandan1,
         Spandan2,
@@ -156,7 +156,7 @@ const Members = () => {
               <img src={photo} alt={member.name} key={index} />
             ))}
           </div>
-          <p className="Favorite">My favorite image^</p>
+          <p className="Favorite">My favorite Gif^</p>
         </div>
       ))}
     </div>

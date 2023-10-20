@@ -1,21 +1,19 @@
 .members {
   color: white;
-  margin-bottom: 25px;
-    background-image: url(../src/Images/Members-background.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-y: auto;
-    height: 100%;
+  background-image: url(../src/Images/Members-background.svg);
+  overflow-y: auto;
+  height: 100%;
+  margin-bottom: 20px;
 }
 
 .members .member{
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #001220;
-    height: 300px;
-    align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #001220;
+  height: 300px;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust the value as needed */
 }
 .members .member .photos .Description{
   flex: 1; /* Take up remaining space */
@@ -59,6 +57,9 @@
     .members .member .photos img:last-child,
     .members .member .photos .gif:last-child {
       margin-right: 0;
+    }
+    .members .member:last-child {
+      margin-bottom: 120px; /* Add margin to the last member element */
     }
     
     .members .member .photos::before,
