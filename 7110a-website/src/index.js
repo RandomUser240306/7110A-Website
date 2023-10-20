@@ -18,16 +18,16 @@ export const Ashwin1 = require("./Images/Ashwin1.png");
 export const Ashwin2 = require("./Images/Ashwin2.png");
 export const Ashwin3 = require("./Images/Ashwin3.png");
 
-// export const Bailey1 = require("./Images/Bailey1.jpg");
-// export const Bailey2 = require("./Images/Bailey2.jpg");
-// export const Bailey3 = require("./Images/Bailey3.jpg");
+export const Bailey1 = require("./Images/Bailey1.jpg");
+export const Bailey2 = require("./Images/Bailey2.jpg");
+export const Bailey3 = require("./Images/Bailey3.jpg");
 
 export const Krish1 = require("./Images/Krish1.png");
 export const Krish2 = require("./Images/Krish2.png");
 export const Krish3 = require("./Images/Krish3.png");
 
-// export const Spandan1 = require("./Images/Spandan1.png");
-// export const Spandan2 = require("./Images/Spandan2.png");
+export const Spandan1 = require("./Images/Spandan1.jpg");
+export const Spandan2 = require("./Images/Spandan2.jpg");
 // export const Spandan3 = require("./Images/Spandan3.png");
 
 // export const Josh1 = require("./Images/Josh1.png");
