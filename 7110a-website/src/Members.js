@@ -80,7 +80,7 @@ const Members = () => {
     {
       name: "Krish Dalela",
       description: "Coder",
-      gif: "https://tenor.com/view/rat-spinning-horizontally-gif-25424411",
+      gif: "https://imgur.com/gallery/IsWDJWa",
       photos: [
         Krish1,
         Krish2,
