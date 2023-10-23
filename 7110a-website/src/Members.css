@@ -19,23 +19,25 @@
   flex: 1; /* Take up remaining space */
   text-align: center;
   font-size: 15px;
+  height: fit-content;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis; /* Add this if you want to show ellipsis for long text */
 }
 .members .member .photos {
   margin: 0 auto;
-  transform: translateY(-20%);
+  transform: translateY(-10%);
   display: flex;
   flex-direction: row;
   padding-right: 20px;
   border-radius: 10px;
+  align-items: center;
+  justify-content: center;
   }
   
   .members .member .photos img {
     margin-right: 25px;
-    height: 250px;
-    width: auto;
+    width: 15%;
+    height: fit-content;
     order: 1;
     }
   
@@ -49,7 +51,7 @@
     }
     
     .members .member .Favorite {
-      transform: translateY(-230%);
+      transform: translateY(-150%);
       color: rgb(255, 255, 255);
       font-size: 20px;
     }
