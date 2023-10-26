@@ -3,11 +3,13 @@ import React from 'react'
 import "./Home.css" 
 import {Canvas} from "@react-three/fiber";
 import {useGLTF, Stage, PresentationControls} from "@react-three/drei"; 
+import { MeshoptDecoder } from '@meshopt/meshopt';
 
 function Model(props){
-  const {scene} = useGLTF("");
+  const {scene} = useGLTF("https://media.githubusercontent.com/media/Ashwin-Iyer1/7110A-Website/main/Parrot.glb");
   return <primitive object={scene} {...props} /> 
 }
+
 export default function Home
 () {
   return (
