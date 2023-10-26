@@ -6,7 +6,7 @@ import {useGLTF, Stage, PresentationControls} from "@react-three/drei";
 import { MeshoptDecoder } from '@meshopt/meshopt';
 
 function Model(props){
-  const {scene} = useGLTF("https://media.githubusercontent.com/media/Ashwin-Iyer1/7110A-Website/main/Parrot.glb");
+  const {scene} = useGLTF("https://media.githubusercontent.com/media/Ashwin-Iyer1/7110A-Website/main/bot.glb", MeshoptDecoder);
   return <primitive object={scene} {...props} /> 
 }
 
