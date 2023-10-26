@@ -5,7 +5,7 @@ import {Canvas} from "@react-three/fiber";
 import {useGLTF, Stage, PresentationControls} from "@react-three/drei"; 
 
 function Model(props){
-  const {scene} = useGLTF("https://raw.githubusercontent.com/Ashwin-Iyer1/7110A-Website/raw/main/7110a-website/src/Assembly_1.gltf");
+  const {scene} = useGLTF("./Parrot.glb");
   return <primitive object={scene} {...props} /> 
 }
 export default function Home
@@ -23,7 +23,7 @@ export default function Home
             polar={[-0.1, Math.PI / 4]}
           >
             <Stage environment={null}>
-              <Model scale={0.01} />
+              <Model scale={.1} />
             </Stage>
           </PresentationControls>
         </Canvas>
