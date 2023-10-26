@@ -5,7 +5,7 @@ import {Canvas} from "@react-three/fiber";
 import {useGLTF, Stage, PresentationControls} from "@react-three/drei"; 
 
 function Model(props){
-  const {scene} = useGLTF("./Parrot.glb");
+  const {scene} = useGLTF("");
   return <primitive object={scene} {...props} /> 
 }
 export default function Home
