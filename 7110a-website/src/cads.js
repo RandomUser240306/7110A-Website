@@ -13,7 +13,7 @@ const modelImages = {
   Launcher: require("./Images/Launcher.JPG"),
   Wing: require("./Images/Wing.JPG"),
   Drivetrain: require("./Images/Drivetrain.JPG"),
-  // Elevation: require("./Images/Elevation.JPG"),
+  Elevation: require("./Images/Elevation.JPG"),
 };
 
 export default function Cads() {
