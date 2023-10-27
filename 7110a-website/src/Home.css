@@ -1,50 +1,63 @@
 .Index {
-    background: #001220;
-    background-image: url(../src/Images/index-background.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-  }
+  background: #001220;
+  background-image: url(../src/Images/index-background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100vw;
+  overflow-y: auto;
+}
 .Index .content {
-    top: 30%;
-    position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.Index .content h1 {
+  font-family: "Aquire";
+  color: #ffffff;
+  margin: 0;
+  font-size: 2.4em;
+}
+.Index .content h1 span {
+  display: block;
+}
+.Index .content .portfolio-text {
+  max-height: fit-content;
+  color: #ffffff;
+  margin-bottom: 0;
+  font-size: 2.4em;
+  width: 13ch;
+  animation: typing 2.3s steps(13), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  border-right: 3px solid;
+  font-family: monospace;
+  height: fit-content;
+  font-size: 6em;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.Index .Model-container{
+    transform: translateX(178%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    justify-content: center;
-    max-width: 100vw;
+    text-align: center;    
+    height: 50vh;
+    width: 50vh;
 }
-.Index .content h1 {
-    font-family: "Aquire";
-    color: #FFFFFF;
-    margin: 0;
-    font-size: 2.4em;
-}
-.Index .content h1 span {
-    display: block;
-}
-.Index .content .portfolio-text {
-    color: #ffffff;
-    margin: 0;
-    font-size: 2.4em;
-    height: 10vh;
-    width: 13ch;
-    animation: typing 2.3s steps(13), blink 0.5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-    font-size: 6em;
-}
-@keyframes typing {
-    from {
-      width: 0;
-    }
-}
-@keyframes blink {
-    50% {
-      border-color: transparent;
-    }
+.Index .Model .Model-container .Model{
+    height: 100%;
 }
