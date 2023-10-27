@@ -6,8 +6,9 @@ import { useParams } from "react-router-dom";
 import { MeshoptDecoder } from 'meshoptimizer';
 
 function Model({ modelName, ...props }) {
-  const { scene } = useGLTF(`https://media.githubusercontent.com/media/Ashwin-Iyer1/7110A-Website/main/${modelName}.glb`, MeshoptDecoder);
-  return <primitive object={scene} rotation={[Math.PI / -2, 0, 0]} {...props} />;
+    const lowerCaseModelName = modelName.toLowerCase(); // Convert to lowercase
+    const { scene } = useGLTF(`https://media.githubusercontent.com/media/Ashwin-Iyer1/7110A-Website/main/${lowerCaseModelName}.glb`, MeshoptDecoder);
+    return <primitive object={scene} rotation={[Math.PI / -2, 0, 0]} {...props} />;
 }
 
 export default function CanvasComp() {
