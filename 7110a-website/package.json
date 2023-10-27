@@ -1,7 +1,7 @@
 {
   "name": "7110a-website",
   "version": "0.1.0",
-  "homepage": "https://ashwin-iyer1.github.io/7110A-Website",
+  "homepage": "https://ashwin-iyer1.github.io",
   "private": false,
   "dependencies": {
     "@react-three/drei": "^9.88.7",
@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^6.0.0",
     "gltfpack": "^0.19.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
