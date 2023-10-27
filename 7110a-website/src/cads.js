@@ -3,6 +3,19 @@ import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import CanvasComp from "./CanvasComp";
 import "./Cads.css";
+
+
+const modelImages = {
+  Intake: require("./Images/Intake.JPG"),
+  Sled: require("./Images/Sled.JPG"),
+  Ratchet: require("./Images/Ratchet.JPG"),
+  Slapper: require("./Images/Slapper.JPG"),
+  Launcher: require("./Images/Launcher.JPG"),
+  Wing: require("./Images/Wing.JPG"),
+  Drivetrain: require("./Images/Drivetrain.JPG"),
+  // Elevation: require("./Images/Elevation.JPG"),
+};
+
 export default function Cads() {
   const modelNames = ["Intake", "Sled", "Ratchet", "Slapper", "Launcher", "Wing", "Drivetrain", "Elevation"];
 
@@ -10,10 +23,14 @@ export default function Cads() {
     <div className="models-grid">
       {modelNames.map((modelName, index) => (
         <div key={index} className="model-square">
-          <Link to={`/cads/${modelName}`} className="model-link">
-            {modelName}
-            <img src={`${modelName}.png`} className="model-image" />
-          </Link>
+              <div className="model-links-container">
+      <Link to={`/cads/${modelName}`} className="model-link">
+        {modelName}
+      </Link>
+      <Link to={`/cads/${modelName}`} className="model-link">
+        <img src={modelImages[modelName]} className="model-image" alt={`${modelName} Image`} />
+      </Link>
+    </div>
         </div>
       ))}
 

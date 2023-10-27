@@ -9,10 +9,12 @@
     background-color: #f0f0f0; /* Set the background color for squares */
     padding: 20px;
     text-align: center;
-    max-height: 300px;
+    max-height: auto;
+    padding-bottom: 20px;
   }
   
   .model-link {
+    padding-top: 20px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -21,3 +23,12 @@
   .model-link:hover {
     text-decoration: underline;
   }
+  .model-links-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.model-image{
+  max-height: 200px;
+  width: auto;
+}
