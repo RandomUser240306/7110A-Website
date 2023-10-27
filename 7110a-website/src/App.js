@@ -5,8 +5,10 @@ import "./App.css";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Members from "./Members";
+import Cads from "./cads";
+import CanvasComp from "./CanvasComp";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <div className="App Index">
@@ -14,10 +16,10 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/members" exact element={<Members />} />
+          <Route path="/cads/*" element={<Cads />} />
+          <Route path="/cads/:modelName" element={<CanvasComp />} />
         </Routes>
       </div>
     </Router>
   );
 }
-
-export default App;

@@ -16,6 +16,10 @@ function Navbar() {
         <li>
             <Link to="/timeline">Timeline</Link>
         </li>
+        <li>
+          <Link to="/Cads">Cads</Link>
+        </li>
+
       </ul>
     </nav>
   );
