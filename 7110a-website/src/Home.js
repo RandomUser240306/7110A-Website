@@ -1,7 +1,7 @@
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Stage } from '@react-three/drei';
-import { MeshoptDecoder } from '@meshopt/meshopt';
+import { MeshoptDecoder } from 'meshoptimizer';
 import './Home.css';
 
 function Model(props) {
