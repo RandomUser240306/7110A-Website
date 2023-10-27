@@ -1,0 +1,35 @@
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    gap: 16px; /* Adjust the gap between squares */
+    padding-bottom: 50px;
+  }
+  
+  .model-square {
+    background-color: #f0f0f0; /* Set the background color for squares */
+    padding: 20px;
+    text-align: center;
+    max-height: 300px;
+  }
+  
+  .model-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .model-link:hover {
+    text-decoration: underline;
+  }
+  .Index .Model-container{
+    transform: translateX(178%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+    height: 50vh;
+    width: 50vh;
+}
+.Index .Model .Model-container .Model{
+    height: 100%;
+}
