@@ -8,7 +8,7 @@ import { useGLTF, OrbitControls, Stage } from '@react-three/drei';
 import { MeshoptDecoder } from 'meshoptimizer';
 
 export default function Models() {
-  const modelNames = ["Intake", "Sleds", "Ratchet", "Slapper", "Cata", "Wings", "Drivetrain"];
+  const modelNames = ["Intake", "Sleds", "Ratchet", "Slapper", "Cata", "Wings", "Drivetrain", "Elevation"];
 
   return (
     <div className="models-grid">
