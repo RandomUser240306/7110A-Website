@@ -17,7 +17,7 @@ function Navbar() {
             <Link to="/timeline">Timeline</Link>
         </li>
         <li>
-          <Link to="/Models">Models</Link>
+          <Link to="/Cads">Cads</Link>
         </li>
 
       </ul>

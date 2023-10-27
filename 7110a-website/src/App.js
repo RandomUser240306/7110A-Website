@@ -5,7 +5,9 @@ import "./App.css";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Members from "./Members";
-import Models from "./Models";
+import Cads from "./cads";
+import CanvasComp from "./CanvasComp";
+
 export default function App() {
   return (
     <Router>
@@ -14,7 +16,8 @@ export default function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/members" exact element={<Members />} />
-          <Route path="/Models" exact element={<Models />} />
+          <Route path="/cads/*" element={<Cads />} />
+          <Route path="/cads/:modelName" element={<CanvasComp />} />
         </Routes>
       </div>
     </Router>
