@@ -5,7 +5,7 @@ import { MeshoptDecoder } from 'meshoptimizer';
 import './Home.css';
 
 function Model(props) {
-  const { scene } = useGLTF('https://media.githubusercontent.com/media/Ashwin-Iyer1/7110A-Website/main/bot.glb', MeshoptDecoder);
+  const { scene } = useGLTF('https://media.githubusercontent.com/media/Ashwin-Iyer1/7110A-Website/main/7110a-website/Models/Bot.glb', MeshoptDecoder);
   return <primitive object={scene} rotation={[Math.PI / -2, 0, 0]} {...props} />;
 }
 

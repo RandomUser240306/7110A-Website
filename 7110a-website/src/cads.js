@@ -3,9 +3,8 @@ import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import CanvasComp from "./CanvasComp";
 import "./Cads.css";
-
 export default function Cads() {
-  const modelNames = ["Intake", "Sleds", "Ratchet", "Slapper", "Cata", "Wings", "Drivetrain", "Elevation"];
+  const modelNames = ["Intake", "Sled", "Ratchet", "Slapper", "Launcher", "Wing", "Drivetrain", "Elevation"];
 
   return (
     <div className="models-grid">
@@ -13,6 +12,7 @@ export default function Cads() {
         <div key={index} className="model-square">
           <Link to={`/cads/${modelName}`} className="model-link">
             {modelName}
+            <img src={`${modelName}.png`} className="model-image" />
           </Link>
         </div>
       ))}
