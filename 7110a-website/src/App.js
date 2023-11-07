@@ -9,7 +9,6 @@ import CanvasComp from "./CanvasComp";
 
 export default function App() {
     return (
-        <Router>
             <div className="App Index">
                 <Navbar />
                 <Routes>
@@ -19,6 +18,5 @@ export default function App() {
                     <Route path="/cads/:modelName" element={<CanvasComp />} />
                 </Routes>
             </div>
-        </Router>
     );
 }
