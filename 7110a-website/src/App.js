@@ -1,5 +1,6 @@
 import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { createBrowserHistory } from 'history';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 import Navbar from "./Navbar";
@@ -8,9 +9,10 @@ import Members from "./Members";
 import Cads from "./cads";
 import CanvasComp from "./CanvasComp";
 
+const hist = createBrowserHistory();
 export default function App() {
   return (
-    <Router>
+    <Router history={hist}>
       <div className="App Index">
         <Navbar />
         <Routes>
