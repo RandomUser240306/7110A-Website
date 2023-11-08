@@ -3,6 +3,7 @@ import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import CanvasComp from "./CanvasComp";
 import "./Cads.css";
+import CadCard from "./CadCard";
 
 
 const modelImages = {
@@ -21,6 +22,7 @@ export default function Cads() {
 
   return (
     <div className="models-grid">
+      <CadCard model={modelName} index={index} />
       {modelNames.map((modelName, index) => (
         <div key={index} className="model-square">
               <div className="model-links-container">

@@ -2,6 +2,8 @@ import React from "react";
 
 import "./Members.css";
 
+import MemberCard from "./MemberCard.js";
+
 import { 
     Ryan1, 
     Ryan2, 
@@ -146,19 +148,13 @@ const Members = () => {
 
   return (
     <div className="members">
-      {members.map((member) => (
-        <div className="member" key={member.name}>
-          <h2>{member.name}</h2>
-          <div className="photos">
-            {member.gif && <img className="gif" src={member.gif} alt={`${member.name}'s gif`} />}
-            <p className="Description">{member.description}</p>
-            {member.photos.map((photo, index) => (
-              <img src={photo} alt={member.name} key={index} />
-            ))}
-          </div>
-          <p className="Favorite">My favorite Gif^</p>
-        </div>
-      ))}
+      <MemberCard member={members[0]} />
+      <MemberCard member={members[1]} />
+      <MemberCard member={members[2]} />
+      <MemberCard member={members[3]} />
+      <MemberCard member={members[4]} />
+      <MemberCard member={members[5]} />
+      <MemberCard member={members[6]} />
     </div>
   );
   };
