@@ -1,74 +1,100 @@
+/* General styles for .members */
 .members {
   color: white;
-  background-image: url(../src/Images/Members-background.svg);
+  /* background-image: url(../src/Images/Members-background.svg); */
   overflow-y: auto;
   height: 100%;
   margin-bottom: 20px;
+  width: 75em;
+  margin: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.members .member{
+.members::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styles for .member */
+.members .member {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
   background-color: #001220;
-  height: 300px;
+  height: 30em;
   align-items: center;
   margin-bottom: 20px; /* Adjust the value as needed */
 }
-.members .member .photos .Description{
+
+.members .member .memberContent {
+  display: flex;
+  height: 80%;
+}
+
+/* Styles for .memberDescription inside .member */
+.members .member .photos .memberDescription {
   flex: 1; /* Take up remaining space */
   text-align: center;
-  font-size: 15px;
+  font-size: 1em;
   height: fit-content;
   white-space: nowrap;
   text-overflow: ellipsis; /* Add this if you want to show ellipsis for long text */
 }
+
+/* Styles for .photos inside .member */
 .members .member .photos {
+  flex: 1;
   margin: 0 auto;
-  transform: translateY(-10%);
+  /* transform: translateY(-10%); */
   display: flex;
   flex-direction: row;
   padding-right: 20px;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  }
-  
-  .members .member .photos img {
-    margin-right: 25px;
-    width: 15%;
-    height: fit-content;
-    order: 1;
-    max-height: 250px;
-    }
-  
-    .members .member .photos .gif {
-      align-items: center;
-      justify-content: center;
-      margin-left: 0px;
-      margin-top: auto;
-      height: 140px;
-      width: auto;
-      order: -1;
-      transform: translateY(-45%);
-    }
-    
-    .members .member .Favorite {
-      transform: translateY(-250%);
-      color: rgb(255, 255, 255);
-      font-size: 20px;
-    }
-    
-    .members .member .photos img:last-child,
-    .members .member .photos .gif:last-child {
-      margin-right: 0;
-    }
-    .members .member:last-child {
-      margin-bottom: 120px; /* Add margin to the last member element */
-    }
-    
-    .members .member .photos::before,
-    .members .member .photos::after {
-      content: '';
-      flex: 1;
-    }
+}
+
+/* Styles for img inside .photos */
+.members .member .photos img {
+  margin-right: 25px;
+  width: 15%;
+  height: fit-content;
+  order: 1;
+  max-height: 250px;
+}
+
+/* Styles for .gif inside .photos */
+.members .member .photos .gif {
+  align-items: center;
+  justify-content: center;
+  margin-left: 0px;
+  margin-top: auto;
+  height: 140px;
+  width: auto;
+  order: -1;
+  transform: translateY(-45%);
+}
+
+/* Styles for .Favorite inside .member */
+.members .member .Favorite {
+  transform: translateY(-250%);
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+}
+
+/* Additional styles for last child .member */
+.members .member:last-child {
+  margin-bottom: 120px; /* Add margin to the last member element */
+}
+
+/* Pseudo-elements for spacing in .photos */
+.members .member .photos::before,
+.members .member .photos::after {
+  content: '';
+  flex: 1;
+}
+
+/* Styles for .memberName (add your styles as needed) */
+.members .member .memberName {
+
+}

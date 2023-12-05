@@ -27,7 +27,7 @@ import {
     Saarim2,
     Saarim3
  } from "./index.js";
-const Members = () => {
+const Members = ( {silly} ) => {
   const members = [
     {
       name: "Ryan Brown",
@@ -148,13 +148,13 @@ const Members = () => {
 
   return (
     <div className="members">
-      <MemberCard member={members[0]} />
-      <MemberCard member={members[1]} />
-      <MemberCard member={members[2]} />
-      <MemberCard member={members[3]} />
-      <MemberCard member={members[4]} />
-      <MemberCard member={members[5]} />
-      <MemberCard member={members[6]} />
+      <MemberCard member={members[0]} silly={silly}/>
+      <MemberCard member={members[1]} silly={silly}/>
+      <MemberCard member={members[2]} silly={silly}/>
+      <MemberCard member={members[3]} silly={silly}/>
+      <MemberCard member={members[4]} silly={silly}/>
+      <MemberCard member={members[5]} silly={silly}/>
+      <MemberCard member={members[6]} silly={silly}/>
     </div>
   );
   };

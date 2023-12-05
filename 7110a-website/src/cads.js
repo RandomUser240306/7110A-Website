@@ -22,18 +22,8 @@ export default function Cads() {
 
   return (
     <div className="models-grid">
-      <CadCard model={modelName} index={index} />
       {modelNames.map((modelName, index) => (
-        <div key={index} className="model-square">
-              <div className="model-links-container">
-      <Link to={`/cads/${modelName}`} className="model-link">
-        {modelName}
-      </Link>
-      <Link to={`/cads/${modelName}`} className="model-link">
-        <img src={modelImages[modelName]} className="model-image" alt={`${modelName} Image`} />
-      </Link>
-    </div>
-        </div>
+        <CadCard modelName={modelName} index={index} modelImages={modelImages} />
       ))}
 
       <Routes>

@@ -13,7 +13,8 @@ export default function App() {
                 <Navbar />
                 <Routes>
                     <Route path="/" exact element={<Home />} />
-                    <Route path="/members" exact element={<Members />} />
+                    <Route path="/members" exact element={<Members silly={false}/>} />
+                    <Route path="/members/silly" exact element={<Members silly={true}/>} />
                     <Route path="/cads/*" element={<Cads />} />
                     <Route path="/cads/:modelName" element={<CanvasComp />} />
                 </Routes>
