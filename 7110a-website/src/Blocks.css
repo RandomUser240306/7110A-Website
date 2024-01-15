@@ -1,0 +1,32 @@
+.Blocks {
+  text-align: center;
+}
+#blocklyDiv {
+  height: 100%; 
+  width: 75%;
+  position:absolute;
+  margin:auto;
+}
+#codetitle {
+  margin:10px;
+  margin-left: 75%;
+  align-content: center;
+  color:white;
+}
+#textarea {
+  margin:10px;
+  margin-left:81%;
+  text-align: left;
+  color:white;
+}
+.Blocks-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+

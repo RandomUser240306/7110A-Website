@@ -6,6 +6,7 @@ import Home from "./Home";
 import Members from "./Members";
 import Cads from "./Cads";
 import CanvasComp from "./CanvasComp";
+import Blocks from "./Blocks";
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
                     <Route path="/members/silly" exact element={<Members silly={true}/>} />
                     <Route path="/cads/*" element={<Cads />} />
                     <Route path="/cads/:modelName" element={<CanvasComp />} />
+                    <Route path="/blocks" element={<Blocks />} />
                 </Routes>
             </div>
     );
